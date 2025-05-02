@@ -19,7 +19,7 @@ _reponame=gnome-shell-system-monitor-applet
 package() {
   cd "$srcdir/$_reponame"
   install -d "$pkgdir/usr/share/gnome-shell/extensions"
-  cp -r "system-monitor-next@paradoxxx.zero.gmail.com" "$pkgdir/usr/share/gnome-shell/extensions/system-monitor-next@paradoxxx.zero.gmail.com"
+  make PREFIX="${pkgdir}/usr" install
 }
 
 pkgver() {
