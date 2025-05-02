@@ -1,0 +1,11 @@
+# Tell the user to disable the extension to avoid errors after removal
+post_remove() {
+    _uuid="system-monitor-next@paradoxxx.zero.gmail.com"
+    echo
+    echo "In order to avoid errors you should disable the currently running extension using the Gnome Extension app, or:"
+    echo
+    echo "    gnome-extensions disable \"$_uuid\""
+    echo
+    echo "Or logout/login"
+    echo
+}

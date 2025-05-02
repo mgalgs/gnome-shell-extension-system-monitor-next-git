@@ -13,6 +13,7 @@ provides=("system-monitor-applet" "gnome-shell-system-monitor-applet-git" "gnome
 conflicts=("gnome-shell-system-monitor-applet-git" "gnome-shell-extension-system-monitor-git")
 source=('git+https://github.com/mgalgs/gnome-shell-system-monitor-applet')
 sha256sums=('SKIP')
+install=${pkgname}.install
 
 _reponame=gnome-shell-system-monitor-applet
 
