@@ -9,3 +9,15 @@ post_remove() {
     echo "Or logout/login"
     echo
 }
+
+post_upgrade() {
+    _uuid="system-monitor-next@paradoxxx.zero.gmail.com"
+    echo
+    echo "In order to apply these updates, you should disable/re-enable the currently running extension using the Gnome Extension app, or:"
+    echo
+    echo "    gnome-extensions disable \"$_uuid\""
+    echo "    gnome-extensions enable \"$_uuid\""
+    echo
+    echo "Or logout/login"
+    echo
+}
