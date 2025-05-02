@@ -19,6 +19,7 @@ _reponame=gnome-shell-system-monitor-applet
 package() {
   cd "$srcdir/$_reponame"
   install -d "$pkgdir/usr/share/gnome-shell/extensions"
+  install -d "$pkgdir/usr/share/glib-2.0/schemas"
   make PREFIX="${pkgdir}/usr" install
 }
 
